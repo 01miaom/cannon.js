@@ -108,8 +108,8 @@
                 material: material
               });
               particle.addShape(new CANNON.Particle());
-              particle.position.set((i + (Math.random()-0.5)*rand + 0.5)*w/nx - w*0.5,
-                                    (j + (Math.random()-0.5)*rand + 0.5)*h/ny - h*0.5,
+              particle.position.set((i/10 + (Math.random()-0.5)*rand + 0.5)*w/nx - w*0.5,
+                                    (j/10 + (Math.random()-0.5)*rand + 0.5)*h/ny - h*0.5,
                                     k*h/ny);
               world.addBody(particle);
               sph.add(particle);
